@@ -55,6 +55,32 @@ Usage
 -----
 
 ```javascript
+var numcal = require('numcal');
+
+//------------------------
+// min
+//------------------------
+console.log(numcal.min(3, 2, 4)); //-> 2
+console.log(numcal.min([3, 2, 4])); //-> 2
+
+//------------------------
+// max
+//------------------------
+console.log(numcal.max(3, 2, 4)); //-> 4
+console.log(numcal.max([3, 2, 4])); //-> 4
+
+//------------------------
+// sum
+//------------------------
+console.log(numcal.sum(3, 2, 4)); //-> 9
+console.log(numcal.sum([3, 2, 4])); //-> 9
+
+//------------------------
+// ave
+//------------------------
+console.log(numcal.ave(3, 2, 4)); //-> 3
+console.log(numcal.ave([3, 2, 4])); //-> 3
+
 
 ````
 
@@ -68,8 +94,14 @@ API
 
 | Signature | Description |
 | --------- | ----------- |
-| .min(val1, val2...) | Find minimum value. |
-| .min([val1, val2...]) | Find minimum value in array. |
+| .min(val1, val2...) | Get minimum value. |
+| .min([val1, val2...]) | Get minimum value in array. |
+| .max(val1, val2...) | Get maximum value. |
+| .max([val1, val2...]) | Get maximum value in array. |
+| .sum(val1, val2...) | Get sum value. |
+| .sum([val1, val2...]) | Get sum  value for array. |
+| .ave(val1, val2...) | Get average value. |
+| .ave([val1, val2...]) | Get average  value for array. |
 
 <!-- Section from "docs/readme/03.API.md.hbs" End -->
 
