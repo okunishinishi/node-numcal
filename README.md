@@ -8,6 +8,7 @@ numcal
 [![Code Climate][bd_codeclimate_shield_url]][bd_codeclimate_url]
 [![Code Coverage][bd_codeclimate_coverage_shield_url]][bd_codeclimate_url]
 [![npm Version][bd_npm_shield_url]][bd_npm_url]
+[![bower version][bd_bower_badge_url]][bd_repo_url]
 
 [bd_repo_url]: https://github.com/okunishinishi/node-numcal
 [bd_travis_url]: http://travis-ci.org/okunishinishi/node-numcal
