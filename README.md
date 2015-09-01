@@ -20,6 +20,7 @@ numcal
 [bd_gemnasium_shield_url]: https://gemnasium.com/okunishinishi/node-numcal.svg
 [bd_npm_url]: http://www.npmjs.org/package/numcal
 [bd_npm_shield_url]: http://img.shields.io/npm/v/numcal.svg?style=flat
+[bd_bower_badge_url]: https://img.shields.io/bower/v/numcal.svg?style=flat
 
 <!-- Badge End -->
 
