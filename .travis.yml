@@ -8,10 +8,10 @@ install:
 before_script:
 - npm link .
 script:
-- npm run build
-- npm run test
-- npm run cover
-- npm run report
+- ./ci/build.js
+- ./ci/test.js
+- ./ci/cover.js
+- ./ci/report.js
 env:
   global:
     secure: 0IR9UkkGKyM7Dktf5bDLuclYUkR+TMlOfqEdYGbSvvnfcktr5syzgzbVtC7QFj0L8V+gjH/H94CvNOcx54PygINDnPliVuh1kaEM5PlVTQI/YHHZp3kegIzM4VQegcltIUYVWZu4z+/4h9bPHXQwBqlPZeiaDPn+dpkS7wKVJpl9bxlQOU1L1ooj6SqCeMpNSeGMamXUOHnBCe63ceR4qmGfshw7YVZF9T8tJ46iGmguW1RmeJ9nPLtIU9cxbR3TSJD7iFao2OLOHccjWonUgRQToZ22tXMmKR8KMz6eqMkUZIiio+a0/HZRn76FBBiyOER/uva97QhR/sUW2V9fq9gQ4G8OD1SljQ+gt4UpI4PpjoCUYTO76LqF990MCpAYXiZTfe60w+1+JCq7wR2ksiKXshLnxZot36F1WOiCRrlZpKRktbOwPGh7EjHgfspwK0PWuoYXPXcTvSdtzC1L1Ln0i508H0RdswIU9cXFtcwUo69qZIjWNBwBVMZyYtbdrkIPUP5/oMfxDbLe0d8pb8X+ltsH0jrwl0r0Qwd+gehRXqwLCp15bTSs3MfjHd+J/Vbc++umftv0ZHy0eW9ED2zKVHC1cC3E0QRpRmaPqG+Fdvr8RJA5R3cUy7GGUyx6WLwdJ5Rov6kPaYFfBKnUJX+ZLo4ZVV0k1lv82dAk1g4=

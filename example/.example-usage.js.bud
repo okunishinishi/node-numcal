@@ -4,7 +4,7 @@
 
 "use strict";
 
-var numcal = require('../../lib'),
+var numcal = require('../lib'),
     util = require('util');
 
 module.exports = {
