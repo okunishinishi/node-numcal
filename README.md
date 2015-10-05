@@ -127,6 +127,7 @@ This software is released under the [MIT License](https://github.com/okunishinis
 Links
 ------
 
++ [chopcal](https://github.com/okunishinishi/node-chopcal)
 + [veccal](https://github.com/okunishinishi/node-veccal)
 + [rangecal](https://github.com/okunishinishi/node-rangecal)
 
