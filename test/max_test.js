@@ -1,23 +1,18 @@
 /**
  * Test case for max.
- * Runs with nodeunit.
+ * Runs with mocha.
  */
+"use strict";
 
-var max = require('../lib/max.js');
+const max = require('../lib/max.js'),
+    assert = require('assert');
 
-exports.setUp = function(done) {
+
+it('Max', (done) => {
+    assert.equal(max(), undefined);
+    assert.equal(max(0), 0);
+    assert.equal(max(3, 2, 4), 4);
+    assert.equal(max([3, 2, 4]), 4);
     done();
-};
-
-exports.tearDown = function(done) {
-    done();
-};
-
-exports['Max'] = function(test){
-    test.equal(max(), undefined);
-    test.equal(max(0), 0);
-    test.equal(max(3, 2, 4), 4);
-    test.equal(max([3, 2, 4]), 4);
-    test.done();
-};
+});
 

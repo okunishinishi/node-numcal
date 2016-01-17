@@ -1,21 +1,16 @@
 /**
  * Test case for sum.
- * Runs with nodeunit.
+ * Runs with mocha.
  */
+"use strict";
 
-var sum = require('../lib/sum.js');
+const sum = require('../lib/sum.js'),
+    assert = require('assert');
 
-exports.setUp = function (done) {
+
+it('Sum', (done) => {
+    assert.equal(sum(3, 1, 4), 8);
+    assert.equal(sum([3, 1, 4]), 8);
     done();
-};
-
-exports.tearDown = function (done) {
-    done();
-};
-
-exports['Sum'] = function (test) {
-    test.equal(sum(3, 1, 4), 8);
-    test.equal(sum([3, 1, 4]), 8);
-    test.done();
-};
+});
 

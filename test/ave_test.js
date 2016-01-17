@@ -1,21 +1,15 @@
 /**
  * Test case for ave.
- * Runs with nodeunit.
+ * Runs with mocha.
  */
+"use strict";
 
-var ave = require('../lib/ave.js');
+const ave = require('../lib/ave.js'),
+    assert = require('assert');
 
-exports.setUp = function (done) {
+it('Ave', (done) => {
+    assert.equal(ave(1, 4, 4), 3);
+    assert.equal(ave([1, 4, 4]), 3);
     done();
-};
-
-exports.tearDown = function (done) {
-    done();
-};
-
-exports['Ave'] = function (test) {
-    test.equal(ave(1, 4, 4), 3);
-    test.equal(ave([1, 4, 4]), 3);
-    test.done();
-};
+});
 

@@ -4,7 +4,7 @@
 
 "use strict";
 
-var numcal = require('../lib'),
+const numcal = require('../lib'),
     util = require('util');
 
 module.exports = {
@@ -14,26 +14,24 @@ module.exports = {
         get examples() {
             return [
                 'min', 'max', 'sum', 'ave'
-            ].map(function (name) {
-                    var func = numcal[name];
-                    return {
-                        name: name,
-                        values: [
-                            [3, 2, 4],
-                            [[3, 2, 4]]
-                        ].map(function (args) {
-                                return {
-                                    args: args.map(function(val){
-                                        if(Array.isArray(val)){
-                                            return util.format('[%s]', val.join(', '));
-                                        }
-                                        return val;
-                                    }).join(', '),
-                                    result: func.apply(func, args)
-                                }
-                            })
-                    }
-                })
+            ].map(name => {
+                let func = numcal[name];
+                return {
+                    name: name,
+                    values: [
+                        [3, 2, 4],
+                        [[3, 2, 4]]
+                    ].map(args => ({
+                        args: args.map((val) => {
+                            if (Array.isArray(val)) {
+                                return util.format('[%s]', val.join(', '));
+                            }
+                            return val;
+                        }).join(', '),
+                        result: func.apply(func, args)
+                    }))
+                }
+            })
 
         }
     }

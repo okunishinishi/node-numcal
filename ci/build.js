@@ -8,25 +8,16 @@
 
 process.chdir(__dirname + '/..');
 
-var apeTasking = require('ape-tasking'),
-    apeCompiling = require('ape-compiling'),
+const apeTasking = require('ape-tasking'),
     coz = require('coz');
 
 apeTasking.runTasks('build', [
-    function renderBud(callback) {
+    (callback) => {
         coz.render([
             '.*.bud',
-            'doc/**/.*.bud',
-            'example/**/.*.bud',
             'lib/.*.bud',
             'test/.*.bud'
         ], callback);
-    },
-    function browsify(callback) {
-        var src = require.resolve('../lib'),
-            dest = require('../bower')['main'];
-        apeCompiling.renderBrowserScript(src, dest, {
-            as: 'numcal'
-        }, callback);
     }
+
 ], true);

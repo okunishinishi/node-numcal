@@ -1,23 +1,17 @@
 /**
  * Test case for min.
- * Runs with nodeunit.
+ * Runs with mocha.
  */
+"use strict";
 
-var min = require('../lib/min.js');
+const min = require('../lib/min.js'),
+    assert = require('assert');
 
-exports.setUp = function (done) {
+it('Min', (done) => {
+    assert.equal(min(), undefined);
+    assert.equal(min(0), 0);
+    assert.equal(min(3, 2, 4), 2);
+    assert.equal(min([3, 2, 4]), 2);
     done();
-};
-
-exports.tearDown = function (done) {
-    done();
-};
-
-exports['Min'] = function (test) {
-    test.equal(min(), undefined);
-    test.equal(min(0), 0);
-    test.equal(min(3, 2, 4), 2);
-    test.equal(min([3, 2, 4]), 2);
-    test.done();
-};
+});
 
