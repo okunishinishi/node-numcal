@@ -1,6 +1,6 @@
 {
   "name": "numcal",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "description": "Basic numeric calculation functions.",
   "main": "lib",
   "scripts": {
@@ -36,6 +36,6 @@
     "extend": "^3.0.0"
   },
   "engines": {
-    "node": ">4.0.0"
+    "node": ">=4.0.0"
   }
 }
