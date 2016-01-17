@@ -42,9 +42,9 @@ Basic numeric calculation functions.
 <!-- Sections Start -->
 <a name="sections"></a>
 
-<!-- Section from "doc/readme/01.Installation.md.hbs" Start -->
+<!-- Section from "doc/guides/01.Installation.md.hbs" Start -->
 
-<a name="section-doc-readme-01-installation-md"></a>
+<a name="section-doc-guides-01-installation-md"></a>
 Installation
 -----
 
@@ -52,11 +52,11 @@ Installation
 npm install numcal --save
 ```
 
-<!-- Section from "doc/readme/01.Installation.md.hbs" End -->
+<!-- Section from "doc/guides/01.Installation.md.hbs" End -->
 
-<!-- Section from "doc/readme/02.Usage.md.hbs" Start -->
+<!-- Section from "doc/guides/02.Usage.md.hbs" Start -->
 
-<a name="section-doc-readme-02-usage-md"></a>
+<a name="section-doc-guides-02-usage-md"></a>
 Usage
 -----
 
@@ -91,11 +91,11 @@ console.log(numcal.ave([3, 2, 4])); //-> 3
 ````
 
 
-<!-- Section from "doc/readme/02.Usage.md.hbs" End -->
+<!-- Section from "doc/guides/02.Usage.md.hbs" End -->
 
-<!-- Section from "doc/readme/03.API.md.hbs" Start -->
+<!-- Section from "doc/guides/03.API.md.hbs" Start -->
 
-<a name="section-doc-readme-03-a-p-i-md"></a>
+<a name="section-doc-guides-03-a-p-i-md"></a>
 API
 ---
 
@@ -111,7 +111,7 @@ API
 | .ave([val1, val2...]) | Get average  value for array. |
 
 
-<!-- Section from "doc/readme/03.API.md.hbs" End -->
+<!-- Section from "doc/guides/03.API.md.hbs" End -->
 
 
 <!-- Sections Start -->
