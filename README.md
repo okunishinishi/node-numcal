@@ -63,7 +63,9 @@ Usage
 -----
 
 ```javascript
-var numcal = require('numcal')
+'use strict'
+
+const numcal = require('numcal')
 
 //------------------------
 // min
