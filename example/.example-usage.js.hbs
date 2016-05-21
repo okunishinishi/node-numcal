@@ -1,13 +1,13 @@
-"use strict";
+'use strict'
 
-const numcal = require('numcal');
+const numcal = require('numcal')
 
 {{#each examples}}
 //------------------------
 // {{name}}
 //------------------------
 {{#each values}}
-console.log(numcal.{{../name}}({{{args}}})); //-> {{result}}
+console.log(numcal.{{../name}}({{{args}}})) //-> {{result}}
 {{/each}}
 
 {{/each}}

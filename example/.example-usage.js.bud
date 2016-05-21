@@ -2,41 +2,40 @@
  * Bud file for example usage.
  */
 
-"use strict";
+'use strict'
 
-const numcal = require('../lib'),
-    util = require('util');
+const numcal = require('../lib')
 
 module.exports = {
-    force: true,
-    mode: '444',
-    data: {
-        get examples() {
-            return [
-                'min', 'max', 'sum', 'ave'
-            ].map(name => {
-                let func = numcal[name];
-                return {
-                    name: name,
-                    values: [
-                        [3, 2, 4],
-                        [[3, 2, 4]]
-                    ].map(args => ({
-                        args: args.map((val) => {
-                            if (Array.isArray(val)) {
-                                return util.format('[%s]', val.join(', '));
-                            }
-                            return val;
-                        }).join(', '),
-                        result: func.apply(func, args)
-                    }))
-                }
-            })
-
+  force: true,
+  mode: '444',
+  data: {
+    get examples () {
+      return [
+        'min', 'max', 'sum', 'ave'
+      ].map(name => {
+        let func = numcal[ name ];
+        return {
+          name: name,
+          values: [
+            [ 3, 2, 4 ],
+            [ [ 3, 2, 4 ] ]
+          ].map(args => ({
+            args: args.map((val) => {
+              if (Array.isArray(val)) {
+                return `[${val.join(', ')}]`
+              }
+              return val;
+            }).join(', '),
+            result: func.apply(func, args)
+          }))
         }
+      })
+
     }
+  }
 };
 
 if (!module.parent) {
-    require('coz').render(__filename);
+  require('coz').render(__filename)
 }

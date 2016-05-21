@@ -1,6 +1,6 @@
 {
   "name": "numcal",
-  "version": "2.0.2",
+  "version": "3.0.0",
   "description": "Basic numeric calculation functions.",
   "main": "lib",
   "scripts": {
@@ -23,19 +23,18 @@
   "homepage": "https://github.com/okunishinishi/node-numcal#readme",
   "dependencies": {},
   "devDependencies": {
-    "ape-compiling": "^3.3.0",
-    "ape-covering": "^2.0.2",
-    "ape-releasing": "^2.0.1",
-    "ape-reporting": "^2.0.3",
-    "ape-tasking": "^2.0.2",
-    "ape-testing": "^2.0.0",
-    "ape-tmpl": "^2.0.7",
-    "ape-updating": "^2.0.3",
-    "coz": "^4.0.1",
-    "coz-tmpl": "^1.1.0",
-    "extend": "^3.0.0"
+    "ape-compiling": "^4.1.0",
+    "ape-covering": "^3.0.1",
+    "ape-releasing": "^3.1.1",
+    "ape-reporting": "^3.0.1",
+    "ape-tasking": "^3.1.2",
+    "ape-testing": "^4.0.0",
+    "ape-tmpl": "^5.0.1",
+    "ape-updating": "^3.0.2",
+    "coz": "^6.0.2"
   },
   "engines": {
-    "node": ">=4.0.0"
+    "node": ">=6",
+    "npm": ">=3"
   }
 }
