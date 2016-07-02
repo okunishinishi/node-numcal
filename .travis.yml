@@ -2,7 +2,8 @@ language: node_js
 node_js:
 - '6'
 before_install:
-- npm install mocha istanbul -g
+- npm install mocha istanbul babel-cli -g
+- npm install babel-preset-es2015
 install:
 - npm install
 script:

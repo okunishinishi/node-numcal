@@ -16,7 +16,7 @@ module.exports = {
       ].map(name => {
         let func = numcal[ name ];
         return {
-          name: name,
+          name,
           values: [
             [ 3, 2, 4 ],
             [ [ 3, 2, 4 ] ]
