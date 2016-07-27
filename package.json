@@ -26,6 +26,7 @@
   "dependencies": {},
   "devDependencies": {
     "ababel": "^1.0.21",
+    "ababel-es2015": "^1.0.2",
     "amocha": "^1.0.8",
     "ape-compiling": "^5.0.1",
     "ape-releasing": "^4.0.2",
