@@ -14,6 +14,6 @@ const ababel = require('ababel')
 apeTasking.runTasks('browser', [
   () => ababel('**/*.js', {
     cwd: 'lib',
-    out: 'sims/browser'
+    out: 'shim/browser'
   })
 ], true)

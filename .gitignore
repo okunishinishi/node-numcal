@@ -31,4 +31,4 @@ node_modules
 .DS_Store
 
 
-sims/browser
+shim/browser

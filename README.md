@@ -49,6 +49,7 @@ Basic numeric calculation functions.
 <!-- Section from "doc/guides/01.Installation.md.hbs" Start -->
 
 <a name="section-doc-guides-01-installation-md"></a>
+
 Installation
 -----
 
@@ -61,6 +62,7 @@ npm install numcal --save
 <!-- Section from "doc/guides/02.Usage.md.hbs" Start -->
 
 <a name="section-doc-guides-02-usage-md"></a>
+
 Usage
 -----
 
@@ -102,6 +104,7 @@ console.log(numcal.ave([3, 2, 4])) //-> 3
 <!-- Section from "doc/guides/03.API.md.hbs" Start -->
 
 <a name="section-doc-guides-03-a-p-i-md"></a>
+
 API
 ---
 
