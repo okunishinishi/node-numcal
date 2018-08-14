@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 /**
- * Compile to browser source
+ * Compile to shim source
  */
 
 'use strict'
@@ -9,10 +9,10 @@
 process.chdir(`${__dirname}/..`)
 
 const apeTasking = require('ape-tasking')
-const ababelES2015 = require('ababel-es2015')
+const ababel = require('ababel')
 
-apeTasking.runTasks('browser', [
-  () => ababelES2015('**/*.js', {
+apeTasking.runTasks('shim', [
+  () => ababel('**/*.js', {
     cwd: 'lib',
     out: 'shim/browser'
   })
